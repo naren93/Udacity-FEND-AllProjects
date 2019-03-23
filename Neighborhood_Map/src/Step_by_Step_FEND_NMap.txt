@@ -1,0 +1,32 @@
+Steps for Project Neighborhood Mapping:
+
+Plot - 
+
+1. Get all necessary structure to start coding with React.Js or Knockout.Js.
+	Using bower - added jquery and knockout.
+2. Write code to show the map.
+	Map is viewable.
+3. Add markers to the map, that would appear automatically when the project loads.
+	Markers get automatically loaded as the map loads.
+4. Implement the list of locations related to the markers on the map.
+	List of locations are marked with the markers
+	Street view implementation - Street view is now AVAILABLE!
+5. Implement the filtering functionality, and remember, it must filter the locations on the list and the associated markers on the map.
+	
+6. Add information about the places using an third party API, like https://developer.foursquare.com/, for example.
+7. Make sure the marker are animated both when it was clicked and when a associated location on the list was clicked.
+8. Make sure the information acquired on item 6 is properly displayed to the user.
+9. Now you have to handle the errors using common fallback techniques. It is a very important part of the project, and you must show a message to the user always that an error happen. To test, you can change the URL of the APIs to get an error an see what happens. Some helpful links about that:
+
+    https://ruben.verborgh.org/blog/2012/12/31/asynchronous-error-handling-in-javascript/
+    http://api.jquery.com/jquery.ajax/#jqXHR
+
+
+--------------
+PPF till date - 44000 - recent - 12500 (Jan)
+NPS - 12.5+12.5 = 25000 +2+1.5 = 28500
+ELSS - Relaince tax saver fund - 
+LIC - 
+LIC - 
+Health insurance - 
+

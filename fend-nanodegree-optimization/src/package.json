@@ -1,0 +1,18 @@
+{
+  "name": "fend-optimization-project",
+  "version": "1.0.0",
+  "description": "getting started with gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ramanathan Subramanian",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-uglify": "^3.0.0"
+  }
+}

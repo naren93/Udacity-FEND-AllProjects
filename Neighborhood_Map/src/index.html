@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Neighborhood Map Project</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<!-- <link rel="stylesheet" media="(max-width: 670px)" href="css/responsive.css"> -->
+</head>
+<body>
+	<div id="map"></div>
+	<div id="searcher">
+		<div id="navigate">
+			<input id="input" placeholder="Search…" type="input" data-bind="textInput: query, valueUpdate: 'keydown'" autocomplete="off"></input>
+			<div id="scroller">
+				<ul data-bind="template: {name: 'marker', foreach:markers}"> </ul>
+				<script type="text/html" id="marker">
+					<div data-bind="visible: visible">
+						<a href="#" data-bind="attr: {id: id}">
+							<li>
+								<strong data-bind="text: title"></strong>
+								<p data-bind="text: streetAddress"></p>
+								<p data-bind="text: cityAddress"></p>
+							</li>
+						</a>
+					</div>
+				</script>
+			</div>
+		</div>
+		<div id="arrow-container">
+			<img id="arrow" src="images/up-arrow.gif" alt="arrow image">
+		</div>
+	</div>
+	<div id="weather-container">
+		<div id="currentTemp">
+		</div>
+	</div>
+	<div class="reset-container">
+		<button id="reset" onclick="reloadPage()">Reset Map Zoom</button>
+	</div>
+	<script type="text/javascript" src="js/bower_components/knockout/dist/knockout.js"></script>
+	<script type="text/javascript" src="js/bower_components/jquery/dist/jquery.js"></script>
+	<script async type="text/javascript" src="js/handle_script_v1.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?libraries=geometry,drawing&v=3&callback=initMap"></script>
+	<script onerror="onGoogleMapLoadError()"  async defer src="js/handle_script_v1.js">
+
+</body>
+</html>

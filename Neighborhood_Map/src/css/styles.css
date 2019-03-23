@@ -1,0 +1,143 @@
+* {box-sizing:border-box;}
+*:visited {color: #7D7D7D}
+body {background-color: #CCC; color: #7D7D7D;}
+html, body, #map {width: 100%; height: 100%; z-index: 1; position: absolute; margin: 0;}
+p {font-size: 12px; margin: 5px 0;}
+strong {font-size: 14px;}
+ul {list-style-type: none; padding-left: 0; margin-bottom: 0;}
+li {font-family: Helvetica, sans-serif; padding: 20px 0 15px 15px;}
+li:hover {background-color: #7D7D7D; color: white;}
+a {text-decoration: none; color: #7D7D7D;}
+hr { margin: 10px 0 0 0; color: orange; border-color: orange;}
+
+.reset-container {
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+	bottom: 0;
+	float: middle;
+}
+#reset {
+	float: right;
+}
+
+#pano {
+	width: 200px;
+	height: 200px;
+}
+
+
+/*@media screen and (max-width: 670px) {
+	.forecast h3 {
+		display: none;
+	}
+
+	.forecast li {
+		margin: 0 1px;
+	}
+}*/
+
+/*@media screen and (max-width: 600px) {
+	.flickr-image-container img {
+	    position: relative;
+	    display: block;
+	    margin: auto;
+	    max-width: 325px;
+	    overflow: hidden;
+	    height: 195px;
+	}
+
+	.modal-images{
+	    max-width: 325px;
+	    min-width: 325px;
+	    height: 260px;
+	    margin: 30% auto;
+	}
+}
+
+@media screen and (max-width: 700px) and (orientation:landscape) {
+	.flickr-image-container img {
+	    position: relative;
+	    display: block;
+	    margin: auto;
+	    max-width: 325px;
+	    overflow: hidden;
+	    height: 195px;
+	}
+
+	.modal-images{
+		max-width: 325px;
+	    min-width: 325px;
+	    height: 260px;
+		margin: 7% auto;
+	}
+
+	#search-container {
+		display: none;
+	}
+}*/
+#input {
+    margin: 15px 0 5px 20px;
+    width: 83%;
+    height: 35px;
+    font-size: 17px;
+    font-family: helvetica, sans-serif;
+    color: #9D9D9D;
+    border: none;
+    -webkit-box-shadow: 2px 2px 5px #9D9D9D;
+    outline: none;
+}
+
+#searcher {
+    position: absolute;
+    z-index: 3; 
+}
+
+#navigate {
+    width: 280px;
+    max-height: 549px;
+    background-color: rgba(256,256,256,.9);
+    border: solid 2px orange;
+    overflow: hidden;
+}
+
+#scroller {
+    max-height: 480px;
+    overflow: scroll;
+    margin: 0 5px;
+}
+#arrow {
+    height: 50px;
+    width: 50px;
+}
+#arrow-container {
+    background-color: orange;
+    opacity: 0.9;
+    max-width: 50px;
+    border-radius: 50%;
+}
+#weather-container {
+    position: absolute;
+    display: block;
+    z-index: 2;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 200px;
+    height: 60px;
+    padding-top: 5px;
+    right: 70px;
+    margin: 0 0 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#currentTemp {
+    display: inline-block;
+    vertical-align: top;
+    font-family: Helvetica, sans-serif;
+}
+#currentTemp p {
+    display: block;
+    vertical-align: top;
+    margin: auto;
+    font-size: 17px;
+}
