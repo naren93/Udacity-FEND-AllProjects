@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en"><!-- common language english -->
+    <head>
+        <!-- -->
+        <meta charset="utf-8">
+        <!-- -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- -->
+        <title>Design Mock-up Portfolio</title>
+        <!-- -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,300,100" rel='stylesheet' type='text/css'>
+        <!-- Bootstrap stylesheet path -->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <!-- Other stylesheets used other than bootstrap -->
+        <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.css">
+        <link rel="stylesheet" href="style1.css">
+        <!-- Scrips can also be added at the end of the body tag -->
+    </head>
+    <body>
+        <div class="container"><!-- -->
+            <div class="row"><!-- -->
+                <div class="col-md-6">
+                    <img src="ImagesForP1/udacity-logo.jpg" srcset="ImagesForP1/udacity-logo.jpg 800w, ImagesForP1/udacity-logo.jpg 1500w" class="title-logo img-responsive img-circle" alt="Udacity logo">
+                </div>
+                <div class="col-md-6 text-right text-uppercase">
+                    <h1 class = "text-thined">Ramanathan S</h1>
+                    <h4>Front-end ninja</h4>
+                </div>
+            </div>
+            <br>
+            <!-- Navigation bar of the bootstrap! -->
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluidic">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="portfolio_mock_up.html">Home</a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#feat">Featured Work</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right social">
+                            <li><a href="https://www.facebook.com/naren.ramanathan.1"><i class="fa fa-lg fa-facebook"></i></a></li>
+                            <li><a href="https://sg.linkedin.com/in/ramanathan-subramanian-58481588"><i class="fa fa-lg fa-linkedin"></i></a></li>
+                            <li><a href="https://github.com/naren93"><i class="fa fa-lg fa-github"></i></a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+            <!-- Nav-bar over -->
+            <!-- hr size="50px" -->
+            <div class="row">
+                <hr><!-- I moved the horizontal line here cuz v need to have all tags under the row div as per the project specification I doesn't look good though. Yeah size attribute is obsolete-->
+                <div class="col-md-12">
+                    <img src="ImagesForP1/Opening-image.jpg" srcset="ImagesForP1/Opening-image.jpg 2w, ImagesForP1/Opening-image.jpg 1w" class="img-responsive img-rounded" alt="Door-Img">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-muted">
+                    <h3 id="feat">Featured Work</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 text-center text-uppercase">
+                    <figure>
+                        <!-- Let me be straight... srcset doesnt make any sense! -->
+                        <img src="ImagesForP1/appify-Copy.png" srcset="" class="img-responsive img-rounded pointer" alt="Appify" data-toggle="modal" data-target="#modal1">
+                        <figcaption>
+                            <h3>Appify</h3>
+                            <p><a href = "#">Click here to view the Appify web page</a></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4 text-center text-uppercase">
+                    <figure>
+                        <img src="ImagesForP1/sunflower-Copy.png" srcset="" class="img-responsive img-rounded pointer" alt="Sunflower" data-toggle="modal" data-target="#modal2">
+                        <figcaption>
+                            <h3>Sunflower</h3>
+                            <p><a href = "#">Click here to view the Sunflower web page</a></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4 text-center text-uppercase">
+                    <figure>
+                        <img src="ImagesForP1/designMock.png" srcset="" class="img-responsive img-rounded pointer" alt="Bokeh" data-toggle="modal" data-target="#modal3">
+                        <figcaption>
+                            <h3>Bokeh</h3>
+                            <p><a href = "#">Click here to view the Bokeh web page</a></p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+                    </div>
+                    <div class="modal-body">
+                        <article class="text-center">
+                            <img class="img-responsive displayed" src="ImagesForP1/appify-Copy.png">
+                            <br>
+                            <h3>This was my first project in this class. I learned a lot about HTML and CSS</h3>
+                        </article>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">Sunflower Page</h4>
+                    </div>
+                    <div class="modal-body">
+                        <article class="text-center">
+                            <img class="img-responsive displayed" src="http://placehold.it/450x250">
+                            <h3>The place holder website for you - HTML and CSS image-extending site</h3>
+                        </article>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">Bokeh Page</h4>
+                    </div>
+                    <div class="modal-body">
+                        <article class = "text-center">
+                            <img class="img-responsive displayed" src="ImagesForP1/designMock.png">
+                            <h3>This was my first project in this class. I learned a lot about HTML and CSS</h3>
+                        </article>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Scrips can also be added at the end of the body tag -->
+        <script type="text/javascript" src="bootstrap/js/jquery-1-11-3.js"></script>
+        <!-- This delays loading of the script till after the page HTML has been loaded therefore giving a more swift and better experience to the user -->
+        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>
